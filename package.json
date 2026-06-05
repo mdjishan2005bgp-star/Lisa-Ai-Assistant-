@@ -4,6 +4,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "preinstall": "npm config set legacy-peer-deps true",
+    "dev": "vite --port=3000 --host=0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rm -rf dist",
+    "lint": "tsc --noEmit",
+    "start:bot": "node server/twilio-bot.js"
+  },
     "dev": "vite --port=3000 --host=0.0.0.0",
     "build": "vite build",
     "preview": "vite preview",
